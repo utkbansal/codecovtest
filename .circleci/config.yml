@@ -2,9 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 #
-version: 2.1
-orbs:
-  codecov: codecov/codecov@1.0.2
+version: 2
 jobs:
   build:
     docker:
@@ -40,6 +38,4 @@ jobs:
           command: |
             . venv/bin/activate
             coverage run --source='.' manage.py test myapp
-
-      - codecov/upload:
-          file: .coverage
+            codecov

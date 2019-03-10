@@ -1,9 +1,12 @@
 certifi==2019.3.9
 chardet==3.0.4
 codecov==2.0.15
-coverage==4.5.2
+coverage==4.0.3
 Django==1.11
 idna==2.8
+python-coveralls==2.9.1
 pytz==2018.9
+PyYAML==3.13
 requests==2.21.0
+six==1.12.0
 urllib3==1.24.1

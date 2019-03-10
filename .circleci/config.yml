@@ -39,3 +39,4 @@ jobs:
             . venv/bin/activate
             coverage run --source='.' manage.py test
             codecov
+            coveralls

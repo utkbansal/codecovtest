@@ -37,5 +37,5 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            coverage run --source='.' manage.py test myapp
+            coverage run --source='.' manage.py test
             codecov

@@ -23,6 +23,9 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            pip install virtualenv
+            virtualenv venv
+            ./venv/bin/activate
             pip install -r requirements.txt
 
       # run tests!
@@ -33,4 +36,5 @@ jobs:
       - run:
           name: run tests
           command: |
+            ./venv/bin/activate
             python manage.py test

@@ -13,3 +13,8 @@ def bar_view(request):
 def hello2_view(request):
     if request.method == 'GET':
         return HttpResponse('Hello World!')
+
+
+def hello_view(request):
+    if request.method == 'GET':
+        return HttpResponse('Hello World!')

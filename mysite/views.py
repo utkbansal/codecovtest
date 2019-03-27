@@ -1,15 +1,16 @@
 from django.shortcuts import HttpResponse
 
 
-def foo_view(request):
+def first_view(request):
     if request.method == 'GET':
-        return HttpResponse('This is the foo view!', status=200)
+        return HttpResponse('This is the first view!', status=200)
 
 
-def bar_view(request):
+def second_view(request):
     if request.method == 'GET':
-        return HttpResponse('This is the bar view!', status=200)
+        return HttpResponse('This is the second view!', status=200)
 
-def hello_view(request):
+
+def third_view(request):
     if request.method == 'GET':
-        return HttpResponse('Hello World!')
+        return HttpResponse('This is the third view!', status=200)

@@ -1,10 +1,10 @@
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from .views import foo_view, bar_view, hello_view
+from .views import first_view, second_view, third_view
 
 urlpatterns = [
-    url(r'^foo/', foo_view, name='foo'),
-    url(r'^bar/', bar_view, name='bar'),
-    url(r'^hello/', hello_view, name='hello'),
+    url(r'^first/', first_view, name='first'),
+    url(r'^second/', second_view, name='second'),
+    url(r'^third/', third_view, name='third'),
 ]

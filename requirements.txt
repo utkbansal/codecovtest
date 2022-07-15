@@ -1,6 +1,6 @@
 certifi==2019.3.9
 chardet==3.0.4
-codecov==2.0.15
+codecov==2.0.16
 coverage==4.0.3
 Django==1.11
 idna==2.8
